@@ -14,25 +14,25 @@ Multiple page support:
 
 Meta information:
   
--SEO basics
+-  SEO basics
   
--Keyword List
+-  Keyword List
   
--Exterior CSS 
+-  Exterior CSS 
 
 Icons:
 
--Site update icon
+-  Site update icon
   
--Article Icon
+-  Article Icon
   
--Earning Icon
+-  Earning Icon
 
 Images:
   
--Article Basic
+-  Article Basic
   
--Article Topics
+-  Article Topics
 
 Code for images in post/article
 
