@@ -4,21 +4,21 @@ Entry level html and css
 
 *To Do's
 
-Multiple page support
+Multiple page support:
   Tiles for landing page.
   Transport blog to blog page. 
   Articles-> Genre-> List-> Individual. 
 
-Meta information
+Meta information:
   SEO basics
   Keyword List
 
-Icons
+Icons:
   Site update icon
   Article Icon
   Earning Icon
 
-Images
+Images:
   Article Basic
   Article Topics
 
