@@ -8,9 +8,9 @@ Multiple page support:
 
 -  Tiles for landing page.
 
--Transport blog to blog page. 
+-  Transport blog to blog page. 
   
--Articles-> Genre-> List-> Individual. 
+-  Articles-> Genre-> List-> Individual. 
 
 Meta information:
   
