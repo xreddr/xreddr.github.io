@@ -2,19 +2,29 @@
 
 Entry level html and css
 
-To Do's
+*To Do's
 
-multiple page support
+Multiple page support
+  Tiles for landing page.
+  Transport blog to blog page. 
+  Articles-> Genre-> List-> Individual. 
 
 Meta information
+  SEO basics
+  Keyword List
 
 Icons
+  Site update icon
+  Article Icon
+  Earning Icon
 
-Code for images in post
+Images
+  Article Basic
+  Article Topics
 
-create new icons: site building
+Code for images in post/article
 
-Progress and Roadmap
+*Progress and Roadmap
 
 Whale Shark is currently positioned to earn interest on its holdings. The progress of the site before the first interest
 earnings are paid will be its alpha development stage. The goals during this stage is to build a template of which to add
