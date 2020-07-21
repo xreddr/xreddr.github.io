@@ -7,32 +7,32 @@ Entry level html and css
 Multiple page support:
 
 -  Tiles for landing page.
- 
- -Transport blog to blog page. 
+
+-Transport blog to blog page. 
   
-  -Articles-> Genre-> List-> Individual. 
+-Articles-> Genre-> List-> Individual. 
 
 Meta information:
   
-  -SEO basics
+-SEO basics
   
-  -Keyword List
+-Keyword List
   
-  -Exterior CSS 
+-Exterior CSS 
 
 Icons:
 
-  -Site update icon
+-Site update icon
   
-  -Article Icon
+-Article Icon
   
-  -Earning Icon
+-Earning Icon
 
 Images:
   
-  -Article Basic
+-Article Basic
   
-  -Article Topics
+-Article Topics
 
 Code for images in post/article
 
