@@ -7,10 +7,43 @@ background-color:black;
 color:lightgrey;
 text-align:center;
 }
+ul {
+list-style-type:none;
+padding:0;
+margin:0;
+overflow:hidden;
+background-color:#4CAF50;
+}
+li {
+float:left;
+} 
+li a {
+display:block;
+text-decoration:none;
+padding:8px 16px;
+color: white;
+background-color:grey;
+}
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+li a:hover:not(.active){
+background-color:darkgrey;
+color:white;
+}
 </style>
 </head>
 <body>
+  <ul>
+  <li><a class="active" href="#home">FunChucks</a></li>
+  <div style="float:right;">
+  <li><a href="#news">Nunchucks</a></li>
+  <li><a href="#contact">Shoes</a></li>
+  <li><a href="#about">Contact</a></li>
+  </div>
+</ul>
 <h1>FunChucks.com</h1>
-<p>Toy nun-chucks and fun-chaku resources</p>
+<p>What started with nunchucks, now has shoes!</p>
 </body>
 </html>
