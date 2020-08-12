@@ -2,55 +2,60 @@
 <html>
 <head>
 <style>
+  
 body{
-background-color:black;
-margin:0;
-color:lightgrey;
-text-align:center;
+  background-color:black;
+  margin:0;
+  color:lightgrey;
+  text-align:center;
+}
+
+/* Page Structure */  
+  
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            
 }
 
 /* Navbar */
 
 nav ul {
-list-style-type:none;
-padding:0;
-margin:0;
-overflow:hidden;
-background-color:#7FFF00;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  background-color:#7CFC00;
 }
 li {
-float:left;
+  float:left;
 } 
 li a {
-display:block;
-text-decoration:none;
-padding:8px 16px;
-color: white;
-background-color:grey;
+  display:block;
+  text-decoration:none;
+  padding:8px 16px;
+  color: white;
+  background-color:grey;
 }
 li a.active {
-  background-color: #7FFF00;
+  background-color: #7CFC00;
   color: #000000;
 }
 li a:hover:not(.active){
-background-color:darkgrey;
-color:white;
+  background-color:darkgrey;
+  color:white;
 }
 
-/* End Navbar */
-
-.section {
-width:100%;
-padding-right:0px;
-padding-left:0px;
-margin-right:auto;
-margin-left:auto;
-}
-.footer {
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-}
 </style>
 </head>
 <body>
@@ -58,71 +63,68 @@ margin-left:auto;
 <!-- Nav Bar -->
 
 <section>
-<div>
-<nav>
-  <ul>
-  <li><a class="active" href="#home">FunChucks.com</a></li>
-  <div style="float:right;">
-  <li><a href="#news">FunChucks</a></li>
-  <li><a href="#contact">Nunchucks</a></li>
-  <li><a href="#about">Shoes</a></li>
+  <div>
+    <nav>
+      <ul>
+        <li><a class="active" href="#home">FunChucks.com</a></li>
+        <div style="float:right;">
+          <li><a href="#news">FunChucks</a></li>
+          <li><a href="#contact">Nunchucks</a></li>
+          <li><a href="#about">Shoes</a></li>
+        </div>
+      </ul>
+    </nav>
   </div>
-  </ul>
-  </nav>
-  </div>
-  </section>
+</section>
   
   <!-- Title -->
   
-  <section style="padding:1px;margin-bottom:50px;">
+<section style="padding:1px;margin-bottom:50px;">
   <div>
-<h1>FunChucks.com</h1>
-<p>What started with nunchucks, now has shoes!</p>
-</div>
+    <h1>FunChucks.com</h1>
+    <p>What started with nunchucks, now has shoes!</p>
+  </div>
 </section>
 
 <!-- Tiles -->
 
-<div style="border: 10px solid orange;width:90%;margin:auto;">
+<div style="border: 10px ridge darkorange;width:90%;margin:auto;color:black;">
 
 <!-- Funchucks Section -->
 
-<section style="background-color: #008B8B;padding:1px;">
-<div>
-<h2>FunChucks</h2>
-<p>Original 100% rope nunchucks</p>
-</div>
+<section style="background-color: gainsboro;padding:1px;">
+  <div>
+    <h2>FunChucks</h2>
+    <p>Original 100% rope nunchucks</p>
+  </div>
 </section>
 
 <!-- Nunchucks Section -->
 
-<section style="background-color: #00CED1;padding:1px;">
-<div>
-<h2>Nunchucks</h2>
-<p>Strait up funchaku</p>
-</div>
+<section style="background-color: lightgrey;padding:1px;">
+  <div>
+    <h2>Nunchucks</h2>
+    <p>Strait up funchaku</p>
+  </div>
 </section>
 
 <!-- Shoes Section -->
 
-<section style="background-color: #008B8B;padding:1px;">
-<div>
-<h2>Shoes</h2>
-<p>Chucks and  more</p>
-</div>
+<section style="background-color: gainsboro;padding:1px;">
+  <div>
+    <h2>Shoes</h2>
+    <p>Chucks and  more</p>
+  </div>
 </section>
 
 </div>
 
 <!-- Footer -->
 
-<section class="footer">
-<div style="background-color:#7FFF00;margin-top:50px;">
-<br>
-</div>
-<div style="color:white;background-color:grey;padding-bottom:20px;margin-bottom:0px;padding-top:1px;">
-<p>2014 Funchucks (c)</p>
-</div>
+<section id="footer">
+  <div style="color:white;background-color:grey;padding-bottom:20px;margin-bottom:0px;margin-top:150px;padding-top:1px;border-top: 20px solid #7CFC00;">
+    <p>2014 Funchucks (c)</p>
+  </div>
 </section>
 
 </body>
