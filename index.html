@@ -1,71 +1,218 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {color:black;background-color:powderblue;text-align:center;}
-      h1 {color:black;text-size:230%;background-color:Steelblue;padding:15px;}
-a.t {
-display:block;
-width:75%;
-height:250px;
-margin-left:auto;
-margin-right:auto;
-text-decoration:none;
-color:black;
+<head>
+<style>
+  
+body{
+  background-color:powderblue;
+  margin:0;
+  color: black;
+  text-align:center;
 }
-div  {
-display:block;
-border:solid white;
-height:250px;
-margin-left:auto;
-margin-right:auto;
-background-color:lightblue;
-text-decoration:none;
-color:black;
+
+/* Page Structure */  
+  
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
-div h2{
-padding-top:50px;
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
 }
-div img{
-height:250px;
-margin-top:0px;
+
+/* Footer Section */
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;   
+  margin-top:5rem;
+  padding-bottom:20px;
+  margin-bottom:0px;
+  padding-top:1px;
+  /* Color Edits */
+  color: black;
+  background-color: honeydew;
+  border-top: 20px solid darkorange;
 }
-div img.a{
-float:right;
+
+/* Navbar */
+
+nav ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  background-color: powderblue;
 }
-div img.b{
-float:left;
+li {
+  float:left;
+} 
+li a {
+  display:block;
+  text-decoration:none;
+  padding:8px 16px;
+  color: white;
+  background-color: powderblue;
 }
-div:hover{
-background-color: steelblue;
-color: white;
+li a.active {
+  background-color: powderblue;
+  color: white;
 }
-    </style>
-  </head>
+li a:hover:not(.active){
+  background-color: powderblue;
+  color: orange;
+}
+
+/* Blog Section */
+
+#blog {
+  background-color: orange;
+  padding:1px;
+  overflow: hidden;
+}
+
+#blog:hover {
+  background: rgba(76, 175, 80, 0.0);
+}
+
+/* Articles Section */
+
+#articles {
+  background-color: darkorange;
+  padding:1px;
+  overflow: hidden;
+}
+
+#articles:hover {
+  background: rgba(76, 175, 80, 0.0);
+}
+
+/* About Section */
+
+#about {
+  background-color: orange;
+  padding:1px;
+  overflow: hidden;
+}
+
+#about:hover {
+  background: rgba(76, 175, 80, 0.0);
+}
+
+.group {
+  border: 10px none darkorange;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  color: white;
+  background-image: url('http://xreddr.github.io/images/underwater1.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}  
+
+a.section-link {
+  display: block;
+  width: 100%; 
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+a.section-link:hover {
+  background-color: none;
+}
+
+</style>
+</head>
 <body>
-<img src="whalesharktitle.png" style="width:80%;height:80%;">
-  <p style="font-size:large;padding:50px;">Whale Shark is an asset allocation strategy for developing sustainable low-risk web properties</p>
-  <a class="t" href="blog.html">
+
+<!-- Nav Bar -->
+
+<section>
   <div>
-  <img class="a" src="http://xreddr.github.io/images/whalesharktitle.png">
-  <h2>Blog</h2>
-  <p>Follow the journey of the project, site and content updates are posted here.</p>
+    <nav>
+      <ul>
+        <li><a class="active" href="#home">WhaleSharkCapital.net</a></li>
+        <div style="float:right;">
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#about">About</a></li>
+        </div>
+      </ul>
+    </nav>
   </div>
-  </a>
-  <a class="t" href="articles.html">
+</section>
+  
+  <!-- Start Page Container -->
+  
+  <container id="page-container">
+  
+  <!-- Title -->
+  
+<section style="padding:1px;margin-bottom:50px;">
   <div>
-  <img class="b" src="http://xreddr.github.io/images/BFC95EAE-0BAF-40A1-89EA-280BB66DF111.jpeg">
-  <h2>Articles</h2>
-  <p>Archive of featured articles</p>
+    <h1></h1>
+    <img src="http://xreddr.github.io/images/whalesharktitle.png" style="width: 100vh;">
+    <p>An asset allocation strategie for developing monetizable web-sites.</p>
   </div>
-  </a>
-  <a class="t" href="about.html">
+</section>
+
+<!-- Group -->
+
+<div class="group">
+
+<!-- Blog Section -->
+
+<a class="section-link" href="blog.html">
+<section id="blog">
   <div>
-  <img class="a" src="http://xreddr.github.io/images/171256ED-61A8-45C2-87DA-37BC835114A4.png">
-  <h2>About</h2>
-  <p>Learn more about Whale Shark Capital</p>
+  <img src="http://xreddr.github.io/images/whalesharktitle.png" style="float: right;position: realative;width: 60%;height: 100%;">
+    <h2 style="padding-top: 12%;">Blog</h2>
+    <p>Follow the journey of the project.</p>
   </div>
-  </a>
-  <p><br>2020 Xreddr<br></p>
+</section>
+</a>
+
+<!-- Articles Section -->
+
+<a class="section-link" href="articles.html">
+<section id="articles">
+  <div>
+  <img src="http://xreddr.github.io/images/WScoins.png" style="float: left;position: realative;width: 60%;height: 100%;">
+    <h2 style="padding-top: 12%;">Articles</h2>
+    <p>Archive of articles.</p>
+  </div>
+</section>
+</a>
+
+<!-- About Section -->
+
+<a class="section-link" href="about.html">
+<section id="about">
+  <div>
+    <img src="http://xreddr.github.io/images/Sub.png" style="float: right;position: realative;width: 60%;height: 100%;">
+    <h2 style="padding-top: 12%;">About</h2>
+    <p>Learn more about the project.</p>
+  </div>
+</section>
+</a>
+
+</div>
+
+</container> <!-- End Page Container -->
+
+<!-- Footer -->
+
+<section id="footer">
+  <div>
+    <p>2020 Xreddr</p>
+  </div>
+</section>
+
 </body>
 </html>
+
