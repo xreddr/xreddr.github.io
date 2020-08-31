@@ -2,91 +2,210 @@
 <html>
   <head>
     <style>
-      body {color:black;background-color:powderblue;text-align:center;}
-      h1 {color:black;text-size:230%;background-color:Steelblue;padding:15px;}
-      h2 {font-family:;text-align:left;color:black;background-color:lightgoldenrodyellow;padding:5px;Margin: 35px 10% 0px 10%;border-top: 8px solid powderblue;border-left: 8px solid steelblue;border-right: 8px solid powderblue;}
-      h3 {font-family:courier;font-size:small;text-align:right;color:black;background-color:lightgoldenrodyellow;padding:5px;margin: 0px 10% 0px 10%;border-left: 8px solid steelblue;border-right: 8px solid powderblue;border-bottom: 8px solid steelblue;}
-      p {margin: 25px 40px 25px 40px;}
-      #post {text-align:left;font-family:;color:black;border-left: 5px solid darkgrey;border-bottom: 5px solid dimgrey;border-right: 5px solid dimgrey;border-top: 5px solid darkgrey;background-color:seashell;padding:15px;margin-top: 0px;margin-left: 10%;margin-right: 10%;line-height: 1.5;}
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-      }
- ul {
-  list-style-type: none;
-  width:75%;
-  padding: 0;
-  border: 1px solid #555;  
-  margin-left: auto;
-  margin-right: auto;
+    
+body{
+  background-color:powderblue;
+  background-image: url('http://xreddr.github.io/images/underwater1.jpeg');
+  margin:0;
+  color: black;
+  text-align:center;
 }
-li a {
-  display: block;
-  padding: 7px;
-  color:black;
-  background-color:lightgrey;
-  text-decoration:none;
- }
+
+/* Page Structure */  
+  
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
+}
+
+/* Footer Structure */
+
+#footer {
+  position: realative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;   
+  margin-top:5rem;
+  padding-bottom:20px;
+  margin-bottom:0px;
+  padding-top:1px;
+  /* Color Edits */
+  color: black;
+  background-color: honeydew;
+  border-top: 20px solid darkorange;
+}
+
+/* Navbar */
+
+nav ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  background-color: powderblue;
+}
+
 li {
-  text-align: center;
-  border-bottom: 1px solid #555;
+  float:left;
+} 
+
+li a {
+  display:block;
+  text-decoration:none;
+  padding:8px 16px;
+  color: white;
+  background-color: powderblue;
 }
 
-li:last-child {
-  border-bottom: none;
+li a.active {
+  background-color: powderblue;
+  color: white;
+}
+li a:hover:not(.active){
+  background-color: powderblue;
+  color: orange;
 }
 
-li a:hover {
-  background-color: #555;
+/* Title Section */
+
+#title {
+  padding:1px;
+  margin-bottom:50px;
+  display: block;
+  heigt: 300px;
+  overflow: hidden;
+}
+
+#title img {
+  width: 60%;
+  position: relative;
+  float: right;
+  max-height:;
+}
+
+#title h1 {
+  text-align: left;
+  margin-left: 20%;
+  padding-top: 12%;
   color: white;
 }
-.active {
-  background-color: #4CAF50;
-  color: white;
+
+
+/* Post Body */
+
+#post {
+  background-color: honeydew;
+  border: 5px solid darkorange;
+  border-left: none;
+  padding: 1px;
+  overflow:;
+  width: 95%;
+  margin-bottom: 50px;
 }
+
+#post h1 {
+  background-color: powderblue;
+  border: 2px solid darkorange;
+  border-left: none;
+  width: 103%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: -2px;
+  font-size: xlarge;
+  text-align: left;
+  text-indent: 10%;
+  color: black;
+}
+
+#post h2 {
+  display: block;
+  background-color: darkorange;
+  border: 0px solid navy;
+  overflow: hidden;
+  text-size: medium;
+  width: 20%;
+  possition: relative;
+  margin-top: -26px;
+  margin-left: auto;
+  margin-right: -1px;
+  font-size: medium;
+  color: black;
+}
+
+#post p {
+  width: 80%;
+  margin: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
     </style>
   </head>
 <body>
-<div style="text-align:left;">
-	<img src="http://xreddr.github.io/images/whalesharktitle.png" style="width:20%;height:20%;">
-    </div>
-  <ul>
-  <li><a href="index.html">Posts</a>
-  <li><a href="articles.html">Articles</a>
-  <li><a href="about.html">About</a>
-  </ul>
-  <h1>Blog-umentation</h1>
-  <h2>Welcome to Whale Shark Capital</h2>
-  <h3>7/23/20</h3>
-  <p id="post">
+
+<!--- Navbar -->
+
+<section>
+  <div>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">WhaleSharkCapital.net</a></li>
+        <div style="float:right;">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="about.html">About</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <!-- Start Page Container -->
+  
+<container id="page-container">
+
+<!-- Title -->
+  
+<section id="title">
+  <div>
+    <img src="http://xreddr.github.io/images/whalesharktitle.png">
+    <h1>Blog</h1>
+  </div>
+</section>
+
+<!-- Posts Section -->
+
+<section>
+
+<!-- Post Start -->
+
+<section id="post">
+  <div>
+    <h1>Welcome to Whale Shark Capital</h1>
+    <h2>7/23/20</h2>
+    <p>
     Whale Shark Capital has acquired it's first domain in its very own name. Head over to the about page to learn more about the project. Content for 
     the website is coming soon. The blog and articles will be main focus of the project in order to document it's journey. The very existence 
     of a crypto backed nano business during the Covid-19 financial crisis should be proof of it's own success. Lets see how it goes. 
-  <h2>DeFi</h2>
-<h3>6/21/20</h3>
-<p id="post" >
-The persuit of maximizing earnings from a small investment has lead to exploring decentralized finance: Cryptocurrency accounts built on blockchain technology. Bitcoin has been a financial entity of controversy for over a decade. As governments and centralized banks look into cryptocurrency options it becomes more important for new investor to consider them as well. It will be a point of the upcoming articles section to integrate decentralized finance with traditional finances. Whale Shark is 100% crypto backed. 
-</p>
-  <h2>Allocation and Expense <img src="DollarsigniconAlpha.png" style="float:right;"></h2>
-<h3>5/22/20</h3>
-<p id="post" >A nano-business has a common definition of starting with $1,000 or less. Keeping within the nano-budget expense
-  I’ve moved $500 into a more favorable interest earning position. To be more clear, moved 500USDC. The concept of stablecoins
-  and fund accessibility will be addressed. For the sake of an update the Whale Shark project currently has $575 invested and
-  is now earning $3.65 a month. A significant increase over the last position. 87% is allocated to stablecoins and 13% to
-  volatile crypto assets. The finances of the project will not always be discussed in the future but coming allocations and
-  expenses are vital to documenting and understanding the project.</p>
-  <h2>Fledgeling Updates <img src="DollarsigniconAlpha.png" style="float:right;"></h2>
-<h3>5/20/20</h3>
-<p id="post" >What an opportunity it is to write an update and not an article. The joys of infancy. As of today, with a total
-  investment of $575, the whale shark project is generating 83 cents a month in revenue. It takes $0 to run. So far, so good.
-  The best part is that the investment is in crypto assets that can be liquidated quickly and easily. As of today,
-  this project can be abandoned for zero loss. Minuscule? Crypto? If this sounds pointless and risky, then you more than
-  anyone should stay tuned.  </p>
-  <h2>Bon Voyage!</h2>
-  <h3>5/17/2020</h3>
-  <p id="post" >On this the 17th of May in the horrible year of 2020 I embark into the oceans of finance to study an entity of
-    sustainability and effeciency. The beatiful whale shark project awaits in the unknown depths of economics.</p>
-  <p><br><br><br><br><br><br><br><br><br><br>2020 Xreddr<br></p>
+    </p>
+  </div>
+</section> <!-- End Post -->
+
+</section> <!-- End Posts Section -->
+    
+</container> <!-- End Page Container -->
+ 
+<!-- Footer -->
+
+<section id="footer">
+  <div>
+    <p>2020 Xreddr</p>
+  </div>
+</section>
+ 
 </body>
 </html>
