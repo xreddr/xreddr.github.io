@@ -2,69 +2,221 @@
 <html>
   <head>
     <style>
-      body {color:black;background-color:powderblue;text-align:center;}
-      h1 {color:black;text-size:230%;background-color:Steelblue;padding:15px;}
-      h2 {font-family:;text-align:left;color:black;background-color:lightgoldenrodyellow;padding:5px;Margin: 35px 5% 0px 5%;border-top: 8px solid powderblue;border-left: 8px solid steelblue;border-right: 8px solid powderblue;}
-      h3 {font-family:courier;font-size:small;text-align:right;color:black;background-color:lightgoldenrodyellow;padding:5px;margin: 0px 5% 0px 5%;border-left: 8px solid steelblue;border-right: 8px solid powderblue;border-bottom: 8px solid steelblue;}
-      p {margin: 25px 40px 25px 40px;}
-      #article {text-indent:25px;text-align:left;font-family:;color:black;border-left: 5px solid darkgrey;border-bottom: 5px solid dimgrey;border-right: 5px solid dimgrey;border-top: 5px solid darkgrey;background-color:seashell;padding:5px;padding-bottom:50px;margin-top: 0px;margin-left: 5%;margin-right: 5%;line-height: 1.5;}
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-      }
-      .title {
-  position: absolute;
-  left: 1px;
-  top: 1px;
+    
+body{
+  background-color:powderblue;
+  background-image: url('http://xreddr.github.io/images/underwater1.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  margin:0;
+  color: black;
+  text-align:center;
 }
-	    ul {
-  list-style-type: none;
-  width:75%;
-  padding: 0;
-  border: 1px solid #555;  
-  margin-left: auto;
-  margin-right: auto;
+
+/* Page Structure */  
+  
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
-li a {
-  display: block;
-  padding: 7px;
-  color:black;
-  background-color:lightgrey;
-  text-decoration:none;
- }
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
+}
+
+/* Footer Structure */
+
+#footer {
+  position: realative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;   
+  margin-top:5rem;
+  padding-bottom:20px;
+  margin-bottom:0px;
+  padding-top:1px;
+  /* Color Edits */
+  color: black;
+  background-color: honeydew;
+  border-top: 20px solid darkorange;
+}
+
+/* Navbar */
+
+nav ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  background-color: powderblue;
+}
+
 li {
+  float:left;
+} 
+
+li a {
+  display:block;
+  text-decoration:none;
+  padding:8px 16px;
+  color: white;
+  background-color: powderblue;
+}
+
+li a.active {
+  background-color: powderblue;
+  color: white;
+}
+li a:hover:not(.active){
+  background-color: powderblue;
+  color: orange;
+}
+
+/* Title Section */
+
+#title {
+  padding:1px;
+  margin-bottom:50px;
+  display: block;
+  heigt: 300px;
+  overflow: hidden;
+}
+
+#title img {
+  width: 60%;
+  position: relative;
+  float: left;
+  max-height:;
+}
+
+#title h1 {
   text-align: center;
-  border-bottom: 1px solid #555;
-}
-
-li:last-child {
-  border-bottom: none;
-}
-
-li a:hover {
-  background-color: #555;
+  margin-left: 20%;
+  padding-top: 12%;
   color: white;
 }
-.active {
-  background-color: #4CAF50;
-  color: white;
+
+
+/* Post Body */
+
+#post {
+  background-color: honeydew;
+  border: 5px solid darkorange;
+  border-left: none;
+  padding: 1px;
+  overflow:;
+  width: 95%;
+  margin-bottom: 50px;
 }
+
+#post h1 {
+  background-color: powderblue;
+  border: 2px solid darkorange;
+  border-left: none;
+  width: 103%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: -2px;
+  font-size: xlarge;
+  text-align: left;
+  text-indent: 10%;
+  color: black;
+}
+
+#post h2 {
+  display: block;
+  background-color: darkorange;
+  border: 0px solid navy;
+  overflow: hidden;
+  text-size: medium;
+  width: 20%;
+  possition: relative;
+  margin-top: -26px;
+  margin-left: auto;
+  margin-right: -1px;
+  font-size: medium;
+  color: black;
+}
+
+#post p {
+  width: 80%;
+  margin: auto;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  text-indent: 30px;
+  text-align: left;
+  line-height: 2;
+}
+
+div.content {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
     </style>
   </head>
 <body>
-<div style="text-align:left;">
-	<img src="http://xreddr.github.io/whalesharktitle.png" style="width:20%;height:20%;">
-    </div>
-  <ul>
-  <li><a href="index.html">Posts</a>
-  <li><a href="articles.html">Articles</a>
-  <li><a href="about.html">About</a>
-  </ul>
-  <h1>Articles</h1>
-  <h2>First Article</h2>
-  <h3>Sometimes in the future</h3>
-  <p id="article">Hook, line, and sinker.</p>
-  <p><br><br><br><br><br><br><br><br><br><br>2020 Xreddr</p>
+
+<!--- Navbar -->
+
+<section>
+  <div>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">WhaleSharkCapital.net</a></li>
+        <div style="float:right;">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="about.html">About</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <!-- Start Page Container -->
+  
+<container id="page-container">
+
+<!-- Title -->
+  
+<section id="title">
+  <div>
+    <img src="http://xreddr.github.io/images/WScoins.png">
+    <h1>About</h1>
+  </div>
+</section>
+
+<!-- Posts Section -->
+
+<section>
+
+<!-- Post Start -->
+
+<section id="post">
+ <div>
+  <div>
+    <h1>First Article</h1>
+    <h2>The Future</h2>
+  </div>
+  <div class="">
+	<p>Description with link</p>
+  </div>
+ </div> 
+</section> <!-- End Post -->
+
+</section> <!-- End Posts Section -->
+    
+</container> <!-- End Page Container -->
+ 
+<!-- Footer -->
+
+<section id="footer">
+  <div>
+    <p>2020 Xreddr</p>
+  </div>
+</section>
+ 
 </body>
 </html>
