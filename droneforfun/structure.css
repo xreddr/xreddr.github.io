@@ -1,0 +1,98 @@
+body {
+	background-image: url(images/nValley.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	font-family: Helvetica;
+	margin: 0px;	
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 8vh;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 8vh; 
+	display: block;
+	overflow: hidden;
+	/* Color Edits */
+	background-color: #F0FFFF90;
+	border-top: 5px solid black;
+}
+
+/* Navbar */
+
+nav ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	/* Color Edits */
+	background-color:;
+}
+
+nav li {
+	float: left;
+} 
+
+nav li a {
+	display:block;
+	text-decoration:none;
+	padding:8px 16px;
+	/* Color Edits */
+	color: white;
+	background-color:;
+}
+
+nav li a.home {
+	/* Color Edits */
+	background-color: ;
+	color: ;
+}
+
+nav li a.active {
+	/* Color Edits */
+	background-color: #F0FFFF90;
+	color: white;
+}
+
+nav li a:hover:not(.active){
+	/* Color Edits */
+	background-color: #F0FFFF90;
+	color:white;
+}
+
+/* Title */
+
+#title {
+	/* Structure */
+	display: block;
+	overflow: hidden;
+	padding: 1px;
+	max-height: ;
+  margin-bottom: 2rem;
+	/* Text Format */
+	/* Color Edits */
+	background-color: #F0FFFF90;
+	color: black;
+}
+
+#title h1 {
+	font-size: 3.5rem;
+	margin-bottom: 1%;
+}
+
+#title img {
+	float: right;
+	height: ;
+	max-width: 35%;
+}
