@@ -1,0 +1,63 @@
+/* Color Palette Module
+Ryan Henion 2021 */
+	
+//1. Variables
+/// $color is the main value the module will calculate a theme from
+/// $tempsread modifies analogus colors contrast to main color
+/// $tempbal modifies base hue for neutrals, 100%=main 0%=compliment
+/// $neutral-tint modifies white value for neutrals
+$color: rgb(65, 149, 205);
+$tempspread: 25deg;
+$tempbal: 50%;
+$neutral-tint: 35%;
+
+$height: 45vh;
+$width: $height;
+
+//2. Constants
+$complement: complement($color);
+$colorwarm: adjust-color($color, $hue:$tempspread);
+$colorcold: adjust-color($color, $hue:-$tempspread);
+$compwarm: adjust-color($complement, $hue:$tempspread);
+$compcold: adjust-color($complement, $hue:-$tempspread);
+$neutral: adjust-color(mix($color, $complement, $tempbal), $lightness:$neutral-tint);
+$neutralwarm: adjust-color(mix($colorwarm, $compwarm, $tempbal), $lightness:$neutral-tint);
+$neutralcold: adjust-color(mix($colorcold, $compcold, $tempbal), $lightness:$neutral-tint);
+
+//3. @use variables	
+$color1: $color;
+$color2: $colorwarm;
+$color3: $neutralwarm;
+$color4: $colorcold;
+$color5: $neutral;
+$color6: $compwarm;
+$color7: $neutralcold;
+$color8: $compcold;
+$color9: $complement;
+
+//4. CSS
+#palette {
+	box-sizing: border-box;
+	width: $width;
+	height: $height;
+	overflow: hidden;
+	border: 3px solid black;
+}
+
+[id*="color-"] {
+	float: left;
+	padding: 1px;
+	width: 33.33%;
+	height: 33.33%;
+}
+
+#color-1 {background-color: $color1;}
+#color-2 {background-color: $color2;}
+#color-3 {background-color: $color3;}
+#color-4 {background-color: $color4;}
+#color-5 {background-color: $color5;}
+#color-6 {background-color: $color6;}
+#color-7 {background-color: $color7;}
+#color-8 {background-color: $color8;}
+#color-9 {background-color: $color9;}
+

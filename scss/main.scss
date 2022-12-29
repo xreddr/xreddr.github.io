@@ -1,0 +1,72 @@
+@use "colors" as *;
+// Core construction
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+// Layout
+body {
+    background-color: $color5;
+}
+
+// Nav
+nav {
+    background-color: $color2;
+}
+
+// Header
+header {
+    background-color: $color1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    background-image: linear-gradient(to left, $color7, $color1);
+}
+
+header img {
+    margin: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: green;
+    transition: transform 0.75s;
+    color: black;
+}
+header img:hover {
+    transform: scale(1.2);
+}
+
+// Main
+main {
+    background-color: $color3;
+}
+
+// Footer
+footer {
+    background-color: $color8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
