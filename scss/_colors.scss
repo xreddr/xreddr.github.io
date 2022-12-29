@@ -6,9 +6,9 @@ Ryan Henion 2021 */
 /// $tempsread modifies analogus colors contrast to main color
 /// $tempbal modifies base hue for neutrals, 100%=main 0%=compliment
 /// $neutral-tint modifies white value for neutrals
-$color: rgb(65, 149, 205);
+$color: rgb(205, 65, 67);
 $tempspread: 25deg;
-$tempbal: 50%;
+$tempbal: 10%;
 $neutral-tint: 35%;
 
 $height: 45vh;

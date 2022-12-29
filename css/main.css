@@ -16,39 +16,39 @@ Ryan Henion 2021 */
 }
 
 #color-1 {
-  background-color: rgb(65, 149, 205);
+  background-color: rgb(205, 65, 67);
 }
 
 #color-2 {
-  background-color: #415bcd;
+  background-color: #cd7941;
 }
 
 #color-3 {
-  background-color: #e0e0e0;
+  background-color: #d2e3ef;
 }
 
 #color-4 {
-  background-color: #41cdcb;
+  background-color: #cd417d;
 }
 
 #color-5 {
-  background-color: #e0e0e0;
+  background-color: #d2efee;
 }
 
 #color-6 {
-  background-color: #cdb341;
+  background-color: #4195cd;
 }
 
 #color-7 {
-  background-color: #e0e0e0;
+  background-color: #d2efe2;
 }
 
 #color-8 {
-  background-color: #cd4143;
+  background-color: #41cd91;
 }
 
 #color-9 {
-  background-color: #cd7941;
+  background-color: #41cdcb;
 }
 
 * {
@@ -68,21 +68,81 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #d2efee;
 }
 
 nav {
-  background-color: #415bcd;
+  height: 7vh;
+  background-color: #cd7941;
 }
 
 header {
-  background-color: rgb(65, 149, 205);
+  margin: 0;
+  height: 93vh;
+  background-color: rgb(205, 65, 67);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: linear-gradient(to left, #d2efe2, rgb(205, 65, 67));
+}
+header #top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header #top h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+@media screen and (min-width: 420px) {
+  header #top {
+    flex-direction: row;
+  }
+}
+header #middle {
+  display: flex;
+  flex-direction: column;
+  align-items: space;
+}
+header #middle p {
+  margin: auto;
+  width: 80%;
+}
+header #bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header ul {
+  background-color: rgb(205, 65, 67);
+  text-decoration: none;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 1rem;
-  background-image: linear-gradient(to left, #e0e0e0, rgb(65, 149, 205));
+  justify-content: space-between;
+}
+header ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 3rem;
+  margin: auto;
+  background: #cd7941;
+  border: 5px solid #41cd91;
+  transition: 0.75s;
+}
+header ul li:hover {
+  background-color: #4195cd;
+}
+@media screen and (min-width: 420px) {
+  header ul li {
+    width: 33.3%;
+  }
 }
 
 header img {
@@ -104,11 +164,24 @@ header img:hover {
 }
 
 main {
-  background-color: #e0e0e0;
+  background-color: #d2e3ef;
+}
+main section {
+  height: 120vh;
+  padding: 1rem;
+}
+main #one {
+  background-color: #d2e3ef;
+}
+main #two {
+  background-color: #d2efee;
+}
+main #three {
+  background-color: #d2efe2;
 }
 
 footer {
-  background-color: #cd4143;
+  background-color: #41cd91;
   position: absolute;
   bottom: 0;
   width: 100%;
