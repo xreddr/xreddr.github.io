@@ -58,6 +58,10 @@ header {
         flex-direction: column;
         align-items: center;
 
+        #summary {
+            display: none;
+        }
+
         p, h2 {
             margin: auto;
             width: 80%;
@@ -70,6 +74,12 @@ header {
 
         h2 {
             font-weight: bold;
+        }
+
+        @media screen and (min-width: 600px) {
+            #summary {
+                display: block;
+            }
         }
     }
 
@@ -99,7 +109,7 @@ header {
             height: 3rem;
             margin: auto;
             background: $color2;
-            border: 5px solid $color8;
+            border: 3px solid $color1;
             transition: 0.75s;
         }
 

@@ -16,39 +16,39 @@ Ryan Henion 2021 */
 }
 
 #color-1 {
-  background-color: rgb(205, 65, 67);
+  background-color: rgb(65, 205, 198);
 }
 
 #color-2 {
-  background-color: #cd7941;
+  background-color: #419acd;
 }
 
 #color-3 {
-  background-color: #d2e3ef;
+  background-color: #efdcd2;
 }
 
 #color-4 {
-  background-color: #cd417d;
+  background-color: #41cd8c;
 }
 
 #color-5 {
-  background-color: #d2efee;
+  background-color: #efd2d3;
 }
 
 #color-6 {
-  background-color: #4195cd;
+  background-color: #cd7441;
 }
 
 #color-7 {
-  background-color: #d2efe2;
+  background-color: #efd2df;
 }
 
 #color-8 {
-  background-color: #41cd91;
+  background-color: #cd4182;
 }
 
 #color-9 {
-  background-color: #41cdcb;
+  background-color: #cd4148;
 }
 
 * {
@@ -68,23 +68,23 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-  background-color: #d2efee;
+  background-color: #efd2d3;
 }
 
 nav {
   height: 5vh;
-  background-color: #cd7941;
+  background-color: #419acd;
 }
 
 header {
   margin: 0;
   height: 95vh;
-  background-color: rgb(205, 65, 67);
+  background-color: rgb(65, 205, 198);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: linear-gradient(to left, #d2efe2, rgb(205, 65, 67));
+  background-image: linear-gradient(to left, #efd2df, rgb(65, 205, 198));
 }
 header #top {
   display: flex;
@@ -106,6 +106,9 @@ header #middle {
   flex-direction: column;
   align-items: center;
 }
+header #middle #summary {
+  display: none;
+}
 header #middle p, header #middle h2 {
   margin: auto;
   width: 80%;
@@ -117,13 +120,18 @@ header #middle p {
 header #middle h2 {
   font-weight: bold;
 }
+@media screen and (min-width: 600px) {
+  header #middle #summary {
+    display: block;
+  }
+}
 header #bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 header ul {
-  background-color: rgb(205, 65, 67);
+  background-color: rgb(65, 205, 198);
   text-decoration: none;
   list-style-type: none;
   display: flex;
@@ -139,12 +147,12 @@ header ul li {
   width: 100%;
   height: 3rem;
   margin: auto;
-  background: #cd7941;
-  border: 5px solid #41cd91;
+  background: #419acd;
+  border: 3px solid rgb(65, 205, 198);
   transition: 0.75s;
 }
 header ul li:hover {
-  background-color: #4195cd;
+  background-color: #cd7441;
 }
 @media screen and (min-width: 420px) {
   header ul li {
@@ -196,24 +204,24 @@ header img:hover {
 }
 
 main {
-  background-color: #d2e3ef;
+  background-color: #efdcd2;
 }
 main section {
   height: 120vh;
   padding: 1rem;
 }
 main #one {
-  background-color: #d2e3ef;
+  background-color: #efdcd2;
 }
 main #two {
-  background-color: #d2efee;
+  background-color: #efd2d3;
 }
 main #three {
-  background-color: #d2efe2;
+  background-color: #efd2df;
 }
 
 footer {
-  background-color: #41cd91;
+  background-color: #cd4182;
   position: absolute;
   bottom: 0;
   width: 100%;
