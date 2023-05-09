@@ -86,13 +86,12 @@ nav ul {
 
 header {
   margin: 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url("../images/bg_1.png");
   background-size: cover;
-  background-position: left;
+  background-position: bottom left;
 }
 header ul {
   text-decoration: none;
@@ -101,20 +100,17 @@ header ul {
 header #top {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   order: 1;
   overflow: scroll;
-  height: 78vh;
+  height: 100vh;
 }
 header #top #card {
-  padding-top: 1.2rem;
   background-color: rgba(239, 210, 211, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
   min-height: 600px;
   height: 100%;
 }
@@ -155,6 +151,7 @@ header #top h1 {
 @media screen and (min-width: 900px) {
   header #top {
     flex-direction: row;
+    justify-content: center;
   }
   header #top #card {
     flex-direction: row;
@@ -163,18 +160,19 @@ header #top h1 {
   }
 }
 header #bottom {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   order: 2;
-  height: 22vh;
+  width: 100%;
 }
 header #bottom ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 header #bottom ul li {
   display: flex;
@@ -211,6 +209,17 @@ header #bottom ul li:hover {
     width: 65%;
     margin-bottom: 1rem;
     border-radius: 20%;
+  }
+}
+@media screen and (min-height: 750px) {
+  header {
+    height: 100vh;
+  }
+  header #top {
+    height: 100%;
+  }
+  header #bottom {
+    display: flex;
   }
 }
 

@@ -38,7 +38,7 @@ nav {
 // Header
 header {
     margin: 0;
-    height: 100vh;
+    // height: 100vh;
     // background-color: $color1;
     display: flex;
     flex-direction: column;
@@ -46,8 +46,7 @@ header {
     justify-content: space-between;
     background-image: url("../images/bg_1.png");
     background-size: cover;
-    background-position: left;
-    // overflow: hidden;
+    background-position: bottom left;
 
     ul {
         text-decoration: none;
@@ -57,20 +56,20 @@ header {
     #top {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         order: 1;
         overflow: scroll;
-        height: 78vh;
+        height: 100vh;
 
         #card {
-            padding-top: 1.2rem;
+            // padding-top: 1.2rem;
             background-color: rgb($color5, 0.6);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow: scroll;
+            // overflow: scroll;
             min-height: 600px;
             height: 100%;
 
@@ -120,6 +119,7 @@ header {
 
         @media screen and (min-width: 900px) {
             flex-direction: row;
+            justify-content: center;
 
             #card {
                 flex-direction: row;
@@ -130,12 +130,13 @@ header {
     }
 
     #bottom {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         order: 2;  
-        height: 22vh; 
+        width: 100%;
+        // height: 22vh; 
 
         ul {
             // background-color: $color1;
@@ -143,6 +144,7 @@ header {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            width: 100%;
 
     
             li {
@@ -187,6 +189,15 @@ header {
             }
         }
         order: 3;
+    }
+    @media screen and (min-height: 750px) {
+        height: 100vh;
+        #top {
+            height: 100%;
+        }
+        #bottom {
+            display: flex;
+        }
     }
 }
 
