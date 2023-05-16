@@ -113,27 +113,28 @@ header #top #card {
   justify-content: center;
   align-items: center;
   overflow: scroll;
-  min-height: 600px;
+  position: top;
   height: 100%;
   width: 100%;
 }
-header #top #card #card_ul {
+header #top #card_ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-header #top #card #card_ul li {
+header #top #card_ul li {
   font-size: 1.25rem;
   margin: 5px;
   transition: transform 0.75s;
   display: flex;
   flex-direction: column;
+  color: blue;
 }
-header #top #card #card_ul li img {
+header #top #card_ul li img {
   height: 85px;
   width: auto;
 }
-header #top #card #card_ul li:hover {
+header #top #card_ul li:hover {
   transform: scale(1.1);
 }
 header #top p, header #top h2 {
@@ -151,6 +152,20 @@ header #top h1 {
   font-size: 2.5rem;
   text-align: center;
 }
+header #top #head_shot {
+  margin: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  max-height: 170px;
+  width: auto;
+  border-radius: 50%;
+  background-color: green;
+  transition: transform 0.75s;
+  color: black;
+}
 @media screen and (min-width: 900px) {
   header #top {
     flex-direction: row;
@@ -167,6 +182,41 @@ header #top h1 {
 @media screen and (max-height: 750px) {
   header #top #card {
     height: 100vh;
+  }
+}
+@media (orientation: portrait) {
+  header #top #card {
+    min-height: 550px;
+  }
+}
+@media screen and (orientation: portrait) and (max-height: 590px) {
+  header #top h1 {
+    font-size: 1.35rem;
+    font-weight: bold;
+  }
+}
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  header #top #card {
+    flex-direction: row;
+  }
+  header #top #card_ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header #top #card_ul li img {
+    height: 21vh;
+  }
+  header #top #card_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 700px) {
+  header #top h1 {
+    font-size: 1.35rem;
+    font-weight: bold;
   }
 }
 header #bottom {
@@ -247,24 +297,6 @@ header #img_bg {
   header #bottom {
     display: flex;
   }
-}
-
-#head_shot {
-  margin: 0.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 170px;
-  width: 170px;
-  border-radius: 50%;
-  background-color: green;
-  transition: transform 0.75s;
-  color: black;
-}
-
-#head_shot:hover {
-  transform: scale(1.2);
 }
 
 main {
