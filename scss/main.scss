@@ -1,3 +1,5 @@
+// sass --watch scss/main.scss css/main.css
+
 @use "colors" as *;
 // Core construction
 * {
@@ -127,6 +129,7 @@ header {
             justify-content: center;
             align-items: center;
             height: 50%;
+            min-height: 120px;
             max-height: 170px;
             width: auto;
             border-radius: 50%;

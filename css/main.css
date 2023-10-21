@@ -159,6 +159,7 @@ header #top #head_shot {
   justify-content: center;
   align-items: center;
   height: 50%;
+  min-height: 120px;
   max-height: 170px;
   width: auto;
   border-radius: 50%;
